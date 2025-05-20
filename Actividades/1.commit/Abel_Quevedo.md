@@ -1,36 +1,36 @@
 # 1.1 Preguntas:
 
-**1. ¿Cómo se inicializa un repositorio local?**
+## **1. ¿Cómo se inicializa un repositorio local?**
 
 comando: git init.
 
-**2. ¿Cómo hago para que un directorio deje de ser controlado por git?**
+## **2. ¿Cómo hago para que un directorio deje de ser controlado por git?**
 
 comando: git ignore <directorio>.
 
-**3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?**
+## **3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?**
 
 Si.
 
-**4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?**
+## **4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?**
 
 comando: git add <archivo>.
 
-**5. ¿Cómo determino que archivos fueron modificados?**
+## **5. ¿Cómo determino que archivos fueron modificados?**
 
 comando: git status.
 
-**6. ¿Qué comando se utiliza para hacer un commit?**
+## **6. ¿Qué comando se utiliza para hacer un commit?**
 
 comando: git commit -m "comentario de los cambios".
 
-**7. En sus propias palabras, ¿qué es un commit?**
+## **7. En sus propias palabras, ¿qué es un commit?**
 
 Es un comando que confirma los cambios realizados.
 
 # 1.2 Ejercicio Práctico:
 
-**3. Antes de realizar cualquier acción con git, guarde el estado actual del directorio en el archivo nombre_apellido.txt. Para esto, se debe ejecutar el comando git status y copiar el resultado en el archivo nombre_apellido.txt.** 
+## **3. Antes de realizar cualquier acción con git, guarde el estado actual del directorio en el archivo nombre_apellido.txt. Para esto, se debe ejecutar el comando git status y copiar el resultado en el archivo nombre_apellido.txt.** 
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -45,7 +45,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Explique que significa la salida del comando: Hay un archivo modificado y un archivo nuevo que hay que agregar y no hay nada listo para ser confirmado.
 
-**5. Explique que cambio en la salida del comando git status luego de ejecutar el comando git add sandwich.txt.**
+## **5. Explique que cambio en la salida del comando git status luego de ejecutar el comando git add sandwich.txt.**
 
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
@@ -53,7 +53,7 @@ Changes to be committed:
 
 El archivo modificado ha sido agregado y no da error.
 
-**7. Explique que cambio en la salida del comando git status luego de ejecutar el comando git commit -m "Agrego mi sandwich.txt".**
+## **7. Explique que cambio en la salida del comando git status luego de ejecutar el comando git commit -m "Agrego mi sandwich.txt".**
 
 C:\Users\USUARIO\IESlaCa-uelaAWEB>git commit -m "Agrego mi sandwich.txt"
 [main 427c1db] Agrego mi sandwich.txt
@@ -66,31 +66,31 @@ Your branch is ahead of 'origin/main' by 1 commit.
 
 El archivo se ha modificado y esta esperando al push para ser publicado
 
-**8. Agregar salsas de su preferencia a sandwich.txt y realizar un commit con el mensaje "Agrego salsas".**
+## **8. Agregar salsas de su preferencia a sandwich.txt y realizar un commit con el mensaje "Agrego salsas".**
 
 C:\Users\USUARIO\IESlaCa-uelaAWEB>git commit -m "Agrego salsas"
 [main cfedf46] Agrego salsas
  1 file changed, 1 insertion(+)
 
-**9. Escriba la salida del comando git log en el archivo nombre_apellido.txt. Y explique que significa. ¿En qué orden aparecen los commits?**
+## **9. Escriba la salida del comando git log en el archivo nombre_apellido.txt. Y explique que significa. ¿En qué orden aparecen los commits?**
 
 git log muestra el historial de commits en un repositorio, el orden va del mas reciente al mas antiguo.
 
-**10. Pruebe las variaciones del comando git log y explique que observa en cada una de ellas.**
+## **10. Pruebe las variaciones del comando git log y explique que observa en cada una de ellas.**
 
-**10.1. git log --oneline** 
+### **10.1. git log --oneline** 
 
 Aparece el historial de commits resumidos en una sola linea.
 
-**10.2. git log --stat**
+### **10.2. git log --stat**
 
 Muestra información estadística sobre los cambios realizados en cada commit.
 
-**11. Inspeccione diferencias entre los commits, use el comando git diff y explique que significa cada uno de los resultados.**
+## **11. Inspeccione diferencias entre los commits, use el comando git diff y explique que significa cada uno de los resultados.**
 
 El comando diferencia la versión antigua y la actual de los commits.
 
-**14. Renombrar el archivo sandwich2.txt a sandwich2_feo.txt. Para esto, se debe ejecutar el comando git mv sandwich2.txt sandwich2_feo.txt. Explique que cambio en la salida del comando git status luego de hacer un commit con esos cambios y de git log --oneline.**
+## **14. Renombrar el archivo sandwich2.txt a sandwich2_feo.txt. Para esto, se debe ejecutar el comando git mv sandwich2.txt sandwich2_feo.txt. Explique que cambio en la salida del comando git status luego de hacer un commit con esos cambios y de git log --oneline.**
 
 Usando git status: 
 
@@ -106,7 +106,7 @@ f321ca8 (HEAD -> main) agregacion de archivo sandwich2.txt y cambio de nombre a 
 
 Aparece el commit realizado
 
-**15. Borre el archivo sandwich2_feo.txt. Para esto, se debe ejecutar el comando git rm sandwich2_feo.txt. Explique que cambio en la salida del comando git status luego de hacer un commit con esos cambios y de git log --oneline.**
+## **15. Borre el archivo sandwich2_feo.txt. Para esto, se debe ejecutar el comando git rm sandwich2_feo.txt. Explique que cambio en la salida del comando git status luego de hacer un commit con esos cambios y de git log --oneline.**
 
 Usando git status: 
 
@@ -127,6 +127,6 @@ Usando git log --oneline:
 
 Aparece el commit realizado
 
-**16. Inspeccione la bitácora usando git log --stat y explique lo que ve.**
+## **16. Inspeccione la bitácora usando git log --stat y explique lo que ve.**
 
 Aparecen todos los cambios y commits realizados.
