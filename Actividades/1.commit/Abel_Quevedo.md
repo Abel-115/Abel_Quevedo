@@ -1,4 +1,4 @@
-#1.1 Preguntas:
+# 1.1 Preguntas:
 
 **1. ¿Cómo se inicializa un repositorio local?**
 
@@ -28,7 +28,7 @@ comando: git commit -m "comentario de los cambios".
 
 Es un comando que confirma los cambios realizados.
 
-#1.2 Ejercicio Práctico:
+# 1.2 Ejercicio Práctico:
 
 **3. Antes de realizar cualquier acción con git, guarde el estado actual del directorio en el archivo nombre_apellido.txt. Para esto, se debe ejecutar el comando git status y copiar el resultado en el archivo nombre_apellido.txt.** 
 
