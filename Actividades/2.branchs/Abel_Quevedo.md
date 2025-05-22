@@ -154,4 +154,99 @@ C:\Users\USUARIO\IESlaCa-uelaAWEB>git graph
 
 ## **16. ¿Qué branches están "mergeadas" a master?**
 
-La branch anana y experimento.
+La branch anana.
+
+## **17. Haga un merge de la branch experimento a la branch master.**
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git merge experimento
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git commit -m "Hago un merge con la rama experimento"
+[main 9637782] Hago un merge con la rama experimento
+
+## **18. Correr el comando git graph y observar el resultado. ¿Qué observa?**
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git graph
+*   9637782 (HEAD -> main) Hago un merge con la rama experimento
+|\
+| * 6b5eaa2 (experimento) Agrego oregano
+| * 4bce0be Agrego un ingrediente extra
+* |   197e1f7 Hago un merge con la rama anana
+|\ \
+| * | 1376e34 (anana) Agrego el condimento anana debajo del queso
+| |/
+* / 0dac357 Agrego cebolla debajo de la salsa
+|/
+
+## **19. ¿Tuvo que hacer un merge manual, o git lo hizo automáticamente? ¿Por qué?**
+
+Tuvo que hacer un merge manual, porque git esta en medio de un merge y requiere intervención manual.
+
+## **20. ¿Qué branches están "mergeadas" a master?**
+
+Las branchs anana y experimento.
+
+## **21. Elimine la branch anana.**
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git branch -d anana
+Deleted branch anana (was 1376e34).
+
+## **22. Elimine la branch experimento.**
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git branch -d experimento
+Deleted branch experimento (was 6b5eaa2).
+
+## **23. ¿Qué branches están "mergeadas" a master?**
+
+Ninguna branch, solo aparecen los commits.
+
+## **24. Correr el comando git graph y observar el resultado. ¿Qué observa?**
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git graph
+*   9637782 (HEAD -> main) Hago un merge con la rama experimento
+|\
+| * 6b5eaa2 Agrego oregano
+| * 4bce0be Agrego un ingrediente extra
+* |   197e1f7 Hago un merge con la rama anana
+|\ \
+| * | 1376e34 Agrego el condimento anana debajo del queso
+| |/
+* / 0dac357 Agrego cebolla debajo de la salsa
+|/
+
+## **25. Crear un tag pizza en el último commit.**
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git tag -a pizza -m "Receta de la pizza."
+
+## **26. Ver los tags creados.**
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git tag
+pizza
+
+## **27. Ver el tag pizza.**
+
+C:\Users\USUARIO\IESlaCa-uelaAWEB>git show pizza
+tag pizza
+Tagger: unknown <abelquevedomelgar@gmail.com>
+Date:   Thu May 22 17:35:38 2025 +0200
+
+Receta de la pizza.
+
+commit 9637782afcd8f4bb6c3be3831b692fe5001ba817 (HEAD -> main, tag: pizza)
+Merge: 197e1f7 6b5eaa2
+Author: unknown <abelquevedomelgar@gmail.com>
+Date:   Thu May 22 17:20:25 2025 +0200
+
+    Hago un merge con la rama experimento
+
+diff --cc Actividades/2.branchs/pizza.txt
+index 961bd26,b523cb9..e605624
+--- a/Actividades/2.branchs/pizza.txt
++++ b/Actividades/2.branchs/pizza.txt
+@@@ -1,5 -1,5 +1,7 @@@
++ oregano
++ albahaca
+  queso
+ +anana
+  salsa de tomate
+ +cebolla
+  masa de pizza
