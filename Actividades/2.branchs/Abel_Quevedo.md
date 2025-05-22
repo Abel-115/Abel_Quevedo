@@ -103,9 +103,9 @@ C:\Users\USUARIO\IESlaCa-uelaAWEB>git commit -m "Agrego el condimento anana deba
  ## **10. Correr el comando git graph y observar el resultado. ¿Qué observa?**
 
  C:\Users\USUARIO\IESlaCa-uelaAWEB>git graph
- 1376e34 (HEAD -> anana) Agrego el condimento anana debajo del queso
-|  6b5eaa2 (experimento) Agrego oregano
-|  4bce0be Agrego un ingrediente extra
+ * 1376e34 (HEAD -> anana) Agrego el condimento anana debajo del queso
+| * 6b5eaa2 (experimento) Agrego oregano
+| * 4bce0be Agrego un ingrediente extra
 |/
 
 ## **11. Vuelva a la branch master.**
